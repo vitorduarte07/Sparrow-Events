@@ -9,14 +9,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/sparrow-events.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400&display=swap" rel="stylesheet">
 
-
-    <title>Sparrow-events - home</title>
+    <title>Sparrow-events - cadastre-se</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
-        <a class="navbar-brand" href="index.html">Sparrow-events</a>
+        <a class="navbar-brand" href="index.html">Sparrow events</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="cadastre-se.html">Cadastre-se</a>
+                    <a class="nav-link" href="#">Cadastre-se</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -52,50 +52,82 @@
             </form>
         </div>
     </nav>
-    <nav class="container">
-        <nav class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1>Seja bem, vindo!</h1>
-                    <p>Realize seu cadastro</p>
-                </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Seja bem, vindo!</h1>
+                <p>Realize seu cadastro</p>
             </div>
-            <div class="row">
-                <div class="col-sm-9">
-                    <fieldset>                          
-                        <legend>Dados pessoais</legend>
-                        <img src="assets/img/pessoa-icon-png-4.png">
-                        <div class="row">
-                        <div class="col-sm-3">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="assets/img/pessoa-icon-png-4.png">
                         </div>
                         <div class="col-sm-9">
                             <div class="form-group row">
-                                <label for="nome" class="col-sm-2 col-form-label">Nome:</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nome">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome">
+                            </div>
+                            <div class="form-group row">
+                                <label for="dataNascimento">Data Nascimento</label>
+                                <input type="date" class="form-control" id="dataNascimento">
+                            </div>
+                            <div class="form-group row">
+                                <label>Sexo</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="radioFeminino" name="radioSexo"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="radioFeminino">Feminino</label>
                                 </div>
-                              </div>
-                              <div class="form-group row">
-                                  <label for="dataNascimento" class="col-sm-2 col-form-label">Data:</label>
-                                  <div class="col-sm-10">
-                                    <input type="date" class="form-control" id="dataNascimento">
-                                  </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="radioMasculino" name="radioSexo"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="radioMasculino">Masculino</label>
                                 </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="formacao">Formação:</label>
+                                <select class="form-control" id="selectFormacao">
+                                    <option>Escolha a opção</option>
+                                    <option>Ensino Fundamental</option>
+                                    <option>Ensino Médio</option>
+                                    <option>Ensino Superior</option>
+                                </select>
+                                <label for="profissao">Profissão:</label>
+                                <select class="form-control" id="selectProfissão">
+                                    <option>Escolha a opção</option>
+                                    <option>Analista de sistemas</option>
+                                    <option>Dev. Frontend</option>
+                                    <option>Dev. Backend</option>
+                                    <option>Dev. Fullstack</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <label for="informeCPF">CPF</label>
+                                <input type="text" class="form-control" id="informeCPF">
+                            </div>
                         </div>
                     </div>
-                    </fieldset>
-                </div>
             </div>
-
-            </div>
-            </div>
-        </nav>
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </fieldset>
+    <!--FIM DO CONTAINER-->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
