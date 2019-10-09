@@ -2,6 +2,10 @@
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
+html{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+}
 main > .container {
     padding: 60px 15px 0;
   }
@@ -18,4 +22,8 @@ main > .container {
   code {
     font-size: 80%;
   }
-  
+
+  .text-muted{
+      color: aliceblue !important;
+  }
+
