@@ -14,7 +14,8 @@
     <title>Sparrow-events - cadastre-se</title>
 </head>
 
-<body>
+<body class="bg-secondary">
+    <!--#region BARRA DE NAVEGAÇÃO-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
         <a class="navbar-brand" href="index.html">Sparrow events</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -28,22 +29,22 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Cadastre-se</a>
+                    <a class="nav-link" href="cadastre-se.html">Cadastre-se</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="evento-detalhar.html" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Eventos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Acontecendo</a>
-                        <a class="dropdown-item" href="#">Previstos</a>
+                        <a class="dropdown-item" href="evento-detalhar.html">Acontecendo</a>
+                        <a class="dropdown-item" href="evento-detalhar.html">Previstos</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Encerrados</a>
+                        <a class="dropdown-item" href="evento-detalhar.html">Encerrados</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contato.html">Contato</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -52,77 +53,83 @@
             </form>
         </div>
     </nav>
-    <div class="container">
+    <!--#endregion-->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!--#region Coluna 01-->
+                <div class="col-sm-4 bg-roxo text-white text-center py-5">
+                    <div class="card-body">
+                        <img src="http://www.ansonika.com/mavia/img/registration_bg.svg">
+                        <h2 class="py-3">Cadastre-se</h2>
+                        <p> Faça parte do clube de eventos Sparrow e ganhe
+                            descontos exclusivos!
+                        </p>
+                    </div>
+                </div>
+                <!--#endregion-->
 
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Seja bem, vindo!</h1>
-                <p>Realize seu cadastro</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <img src="assets/img/pessoa-icon-png-4.png">
+                <!--#region Coluna 02-->
+                <div class="col-sm-8 py-5 border bg-white">
+                    <h4>Cadastre-se</h4>
+                    <form>
+                        <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                        <label id="inputNome">Nome completo</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                            <div class="form-group col-sm-6">
+                                <label>Email</label>
+                                <input type="email" class="form-control">
+                            </div>
                         </div>
-                        <div class="col-sm-9">
-                            <div class="form-group row">
-                                <label for="nome">Nome</label>
-                                <input type="text" class="form-control" id="nome">
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label>Telefone</label>
+                                <input type="tel" class="form-control">
                             </div>
-                            <div class="form-group row">
-                                <label for="dataNascimento">Data Nascimento</label>
-                                <input type="date" class="form-control" id="dataNascimento">
-                            </div>
-                            <div class="form-group row">
-                                <label>Sexo</label>
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="radioFeminino" name="radioSexo"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="radioFeminino">Feminino</label>
-                                </div>
-                                <div class="custom-control custom-radio">
+                            <div class="form-group col-sm-6">
+                                    <label for="radioSexo">Sexo</label>
+                                    <div class="py-2">
+                                <div class="custom-control custom-radio custom-control-inline">
                                     <input type="radio" id="radioMasculino" name="radioSexo"
                                         class="custom-control-input">
                                     <label class="custom-control-label" for="radioMasculino">Masculino</label>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="radioFeminino" name="radioSexo"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="radioFeminino">Feminino</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="formacao">Formação:</label>
-                                <select class="form-control" id="selectFormacao">
-                                    <option>Escolha a opção</option>
-                                    <option>Ensino Fundamental</option>
-                                    <option>Ensino Médio</option>
-                                    <option>Ensino Superior</option>
-                                </select>
-                                <label for="profissao">Profissão:</label>
-                                <select class="form-control" id="selectProfissão">
-                                    <option>Escolha a opção</option>
-                                    <option>Analista de sistemas</option>
-                                    <option>Dev. Frontend</option>
-                                    <option>Dev. Backend</option>
-                                    <option>Dev. Fullstack</option>
-                                </select>
-                            </div>
-                            <div class="form-group row">
-                                <label for="informeCPF">CPF</label>
-                                <input type="text" class="form-control" id="informeCPF">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                            <label>Nos diga que tipos de eventos você gosta mais!</label>
+                            <textarea rows="5" class="form-control"></textarea>
                             </div>
                         </div>
-                    </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                    <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Deseja receber e-mails propocionais?</label>
+                                          </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group col-sm-12">
+                                        <button type="button" class="btn btn-success">Cadastrar</button>
+                                </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                <!--#endregion-->
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </fieldset>
-    <!--FIM DO CONTAINER-->
-    </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
