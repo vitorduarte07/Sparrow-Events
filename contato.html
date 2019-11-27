@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 
+
     <link rel="stylesheet" href="assets/css/sparrow-events.css">
+    <link rel="stylesheet" href="node_modules/toastr/build/toastr.css">
     <title> Sparrow-events - home</title>
 </head>
 
@@ -134,11 +136,13 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
     <script src="assets/js/jquery-mask-plugin-custom.js"></script>
+    <script src="node_modules/toastr/build/toastr.min.js"></script>
     <script>
             // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
             (function() {
               'use strict';
               window.addEventListener('load', function() {
+                  toastr.info('bem vindo!')
                 // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
                 var forms = document.getElementsByClassName('needs-validation');
                 // Faz um loop neles e evita o envio
