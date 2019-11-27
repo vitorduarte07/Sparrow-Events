@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/sparrow-events.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">    
 
     <title>Sparrow-events - cadastre-se</title>
 </head>
@@ -75,9 +79,12 @@
                     <form>
                         <div class="form-row">
                                 <div class="form-group col-sm-6">
-                                        <label id="inputNome">Nome completo</label>
-                                        <input type="text" class="form-control">
-                                    </div>
+                                <label id="inputNome">Nome completo</label>
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1" aria-label="Usuário"><i class="far fa-user"></span></i>
+                                        <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                        </div>
+                                </div>
                             <div class="form-group col-sm-6">
                                 <label>Email</label>
                                 <input type="email" class="form-control">
